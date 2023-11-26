@@ -82,7 +82,7 @@ def pregunta_03():
             ),
             (
                 "mlpregressor",
-                MLPRegressor(max_iter=500, early_stopping=True),  
+                MLPRegressor(max_iter=5000, early_stopping=True),  
             ),
         ],
     )
