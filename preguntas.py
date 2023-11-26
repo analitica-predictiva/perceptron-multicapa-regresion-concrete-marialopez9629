@@ -110,11 +110,11 @@ def pregunta_04():
     #   * Use parada temprana
 
     param_grid = {
-        'regressor__mlpregressor__hidden_layer_sizes': [1,2,3,4,5,6,7,8],  
-        'regressor__mlpregressor__activation': ['relu'],  
-        'regressor__mlpregressor__learning_rate': ["adaptive"],  
-        'regressor__mlpregressor__momentum': [0.7,0.8,0.9],  
-        'regressor__mlpregressor__activation_learning_rate_init': [0.01,0.05,0.1],    
+        'mlpregressor__hidden_layer_sizes': [1,2,3,4,5,6,7,8],  
+        'mlpregressor__activation': ['relu'],  
+        'mlpregressor__learning_rate': ["adaptive"],  
+        'mlpregressor__momentum': [0.7,0.8,0.9],  
+        'mlpregressor__activation_learning_rate_init': [0.01,0.05,0.1],    
     }
 
     estimator = pregunta_03()
