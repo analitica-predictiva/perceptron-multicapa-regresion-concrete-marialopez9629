@@ -28,7 +28,7 @@ def pregunta_01():
     X.pop("strength")  
 
     # Retorne `X` y `y`
-    return x, y
+    return X, y
 
 
 def pregunta_02():
