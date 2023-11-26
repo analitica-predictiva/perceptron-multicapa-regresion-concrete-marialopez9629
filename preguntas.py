@@ -81,7 +81,7 @@ def pregunta_03():
                 MinMaxScaler(),  
             ),
             (
-                "mlpregressor",
+                "mlp",
                 MLPRegressor(max_iter=500, early_stopping=True),  
             ),
         ],
