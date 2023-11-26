@@ -81,7 +81,7 @@ def pregunta_03():
                 MinMaxScaler(),  
             ),
             (
-                "mlp",
+                "mlpregressor",
                 MLPRegressor(max_iter=500, early_stopping=True),  
             ),
         ],
@@ -110,11 +110,11 @@ def pregunta_04():
     #   * Use parada temprana
 
     param_grid = {
-        'regressor__mlp__hidden_layer_sizes': [1,2,3,4,5,6,7,8],  
-        'regressor__mlp__activation': ['relu'],  
-        'regressor__mlp__learning_rate': ["adaptive"],  
-        'regressor__mlp__momentum': [0.7,0.8,0.9],  
-        'regressor__mlp__activation_learning_rate_init': [0.01,0.05,0.1],    
+        'regressor__mlpregressor__hidden_layer_sizes': [1,2,3,4,5,6,7,8],  
+        'regressor__mlpregressor__activation': ['relu'],  
+        'regressor__mlpregressor__learning_rate': ["adaptive"],  
+        'regressor__mlpregressor__momentum': [0.7,0.8,0.9],  
+        'regressor__mlpregressor__activation_learning_rate_init': [0.01,0.05,0.1],    
     }
 
     estimator = pregunta_03()
